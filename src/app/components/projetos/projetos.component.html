@@ -1,0 +1,18 @@
+<section id="projetos">
+  <div class="container__projetos">
+    <h1>Projetos</h1>
+  </div>
+  <div class="container__conteudo">
+    <div class="video__card" *ngFor="let projeto of projetos">
+      <a href="{{ projeto.githubUrl }}" target="_blank" rel="noopener">
+        <h4>{{ projeto.titulo }}</h4>
+        <video width="100%" height="100%" autoplay loop muted>
+          <source [src]="projeto.videoUrl" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </a>
+    </div>
+  </div>
+</section>
+
+

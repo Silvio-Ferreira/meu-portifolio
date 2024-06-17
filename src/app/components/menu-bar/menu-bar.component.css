@@ -1,0 +1,99 @@
+.container__menu-bar {
+  position: fixed; 
+  padding: 10px 20px;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  z-index: 1000;
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(235, 227, 227, 0.1); 
+  transition: background-color 0.5s ease-in-out, backdrop-filter 0.5s ease; 
+}
+
+h1 {
+  color: #fff;
+}
+.container__menu-bar.blurred {
+  backdrop-filter: blur(10px);
+}
+
+
+.tudo {
+  padding-top: 60px; 
+}
+
+
+.container__redes > ul {
+  margin-right: 80px;
+  text-decoration: none;
+}
+
+.container__redes > ul > li{
+  margin: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  
+}
+
+.container__nav > ul > li > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container__nav > ul > li > a:hover,
+.container__nav > ul > li > a:focus {
+    text-decoration: underline;
+}
+
+.container__nav > ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-right: 10px;
+  
+}
+
+.container__nav > ul > li {
+  margin: 10px;
+  
+}
+
+
+.nome {
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 80px;
+  
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/* Regras de mídia para telas com largura de até 1020px */
+@media (max-width: 1020px) {
+  .hamburger {
+    display: block; /* Mostra o botão hamburger */
+    margin-right: 20px; /* Espaço à direita do botão, ajuste conforme necessário */
+  }
+
+  /* Opcionalmente, ocultar outros elementos de navegação que não são necessários em telas menores */
+  .nome, .container__nav, .container__redes {
+    display: none;
+  }
+
+  .menu {
+    flex-direction: column;
+    width: 100%;
+    display: none; /* Inicialmente oculto, será mostrado quando o hamburger for clicado */
+  }
+
+  .menu.active {
+    display: flex; /* Mostra o menu quando o hamburger é clicado */
+  }
+}

@@ -1,0 +1,16 @@
+<section id="conhecimentos">
+     <h1>Conhecimentos</h1>
+    
+    <div class="container__conhecimentos">
+      <div class="container__card" *ngFor="let conhecimento of conhecimentos">
+        <h4>{{ conhecimento.titulo }}</h4>
+        <img [src]="conhecimento.ImageUrl" alt="{{ conhecimento.titulo }}" />
+        <div class="container__paragrafo">
+            <p>
+            {{ conhecimento.descricao }}
+          </p>
+        </div>
+      </div>
+    </div>
+  
+</section>

@@ -1,0 +1,51 @@
+<div class="tudo">
+  <div class="container__menu-bar" [ngClass]="{'blurred' : isBlurred}">
+    <h1 class="nome">Silvio Ferreira</h1>
+
+    <!-- Botão do hamburger para visualização em dispositivos móveis -->
+    <div class="hamburger" (click)="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Navegação -->
+    <div class="container__nav">
+      <ul class="menu" [class.active]="isMenuOpen">
+        <li><a href="#início" class="close" (click)="toggleMenu()">Início</a></li>
+        <li><a href="#sobre-mim" class="close" (click)="toggleMenu()">Sobre mim</a></li>
+        <li><a href="#projetos" class="close" (click)="toggleMenu()">Projetos</a></li>
+        <li><a href="#conhecimentos" class="close" (click)="toggleMenu()">Conhecimentos</a></li>
+        <li><a href="#fale-comigo" class="close" (click)="toggleMenu()">Fale comigo</a></li>
+      </ul>
+    </div>
+
+    <!-- Links para redes sociais -->
+    <div class="container__redes">
+      <ul>
+        <li>
+          <a href="" title="Instagram" target="_blank">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 2H7C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5z" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16 11.37a4.004 4.004 0 0 1-1 2.63 4.004 4.004 0 0 1-2.63 1 4.004 4.004 0 0 1-2.63-1 4.004 4.004 0 0 1-1-2.63 4.004 4.004 0 0 1 1-2.63 4.004 4.004 0 0 1 2.63-1 4.004 4.004 0 0 1 2.63 1 4.004 4.004 0 0 1 1 2.63zM17.5 6.5h.01" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Silvio-Ferreira" title="GitHub" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="none" d="M0 0h24v24H0z"/>
+              <path d="M12 2C6.48 2 2 6.48 2 12a9.99 9.99 0 0 0 6.84 9.49c.5.09.68-.21.68-.47 0-.23-.01-1.02-.02-1.86-2.51.47-3.16-.61-3.36-1.18-.11-.29-.6-1.18-1.02-1.42-.35-.19-.85-.65-.01-.66.79-.01 1.35.73 1.54 1.02.9 1.51 2.34 1.08 2.91.83.09-.65.35-1.08.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.26 2.75 1.03a9.4 9.4 0 0 1 2.5-.34c.85 0 1.7.11 2.5.34 1.91-1.29 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.83-2.34 4.69-4.57 4.94.36.31.68.92.68 1.86 0 1.34-.01 2.42-.01 2.76 0 .26.19.58.69.47A10 10 0 0 0 22 12c0-5.52-4.48-10-10-10z" fill="#FFF"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/silvio-ferreira-b88382198/" title="LinkedIn" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="none" d="M0 0h24v24H0z"/>
+              <path d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z" fill="#FFF"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

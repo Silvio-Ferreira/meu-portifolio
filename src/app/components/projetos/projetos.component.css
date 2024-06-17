@@ -1,0 +1,59 @@
+.container__projetos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 7%;
+}
+
+.container__conteudo {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 3%;
+}
+
+.video__card {
+  width: 33%;
+  height: auto; /* Alterado para auto para melhorar a responsividade */
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.video__card video {
+  width: 100%;
+  height: auto; /* Ajuste para manter proporção */
+}
+
+.container__conteudo > .video__card > h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video__card h4 {
+  color: white;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .container__conteudo {
+    justify-content: center; /* Centraliza os filhos horizontalmente */
+    
+  }
+
+  .video__card {
+    width: 100%; /* Reduz a largura dos cards para melhor visualização em telas menores */
+    height: auto; /* Ajusta a altura automaticamente */
+    
+  }
+
+  .video__card video {
+    width: 100%; /* Garante que o vídeo preencha o card */
+    height: auto; /* Mantém a proporção do vídeo correta */
+  }
+
+  h4 {
+    
+  }
+}

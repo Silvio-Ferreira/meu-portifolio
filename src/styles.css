@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+* {
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: rgb(164,164,164);
+  background: radial-gradient(circle, rgba(164,164,164,1) 0%, rgba(23,23,23,1) 100%);
+  max-width: 100%;
+  background-size: cover;  /* Faz com que o background sempre cubra toda a área de visualização */
+  background-attachment: fixed;  /* Opcional: mantém o fundo fixo durante a rolagem */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100vh;
+  min-height: 100vh; /* Garantir que o body cobre pelo menos a altura da tela */
+  max-width: 100%;
+  overflow-x: hidden;
+  background: none;
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+

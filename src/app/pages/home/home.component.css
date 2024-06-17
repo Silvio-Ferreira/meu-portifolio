@@ -1,0 +1,21 @@
+.container__conteudo {
+  width: auto;
+  height: auto;
+
+}
+
+  @media (max-width: 768px) {
+    .container__conteudo {
+      flex-direction: column;
+    }
+    
+    .container__card {
+      width: 100%; /* Faz com que os cards usem toda a largura em dispositivos móveis */
+    }
+  
+    .video__card, .container__conhecimentos .container__card {
+      width: 100%; /* Ajusta a largura dos cards de vídeo e conhecimento para dispositivos móveis */
+    }
+
+  }
+
